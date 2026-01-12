@@ -9,6 +9,7 @@ import CategoryPage from "./pages/CategoryPage";
 import NotFound from "./pages/NotFound";
 import { WhatsAppCartProvider } from "@/hooks/use-whatsapp-cart";
 import FloatingWhatsAppCart from "@/components/FloatingWhatsAppCart";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
         </BrowserRouter>
         <FloatingWhatsAppCart />
         <Analytics />
+        <SpeedInsights />
       </WhatsAppCartProvider>
     </TooltipProvider>
   </QueryClientProvider>
