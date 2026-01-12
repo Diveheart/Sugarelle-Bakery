@@ -87,7 +87,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden w-10 h-10 rounded-full flex items-center justify-center bg-secondary"
+          className="md:hidden px-3 py-2 rounded-full flex items-center gap-2 bg-secondary"
           aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? (
@@ -95,6 +95,7 @@ const Navbar = () => {
           ) : (
             <Menu className="w-5 h-5 text-foreground" />
           )}
+          <span className="text-sm font-medium text-foreground">Menu</span>
         </button>
       </div>
 
@@ -124,7 +125,7 @@ const Navbar = () => {
             </div>
 
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/+917836903644"
               target="_blank"
               rel="noopener noreferrer"
               className="whatsapp-btn text-white px-5 py-3 rounded-full text-sm font-medium text-center inline-flex items-center justify-center gap-2 mt-2"

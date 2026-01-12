@@ -36,7 +36,7 @@ const Footer = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
-                href="https://wa.me/1234567890" 
+                href="https://wa.me/+917836903644" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-[#25D366] transition-colors" 
@@ -93,7 +93,7 @@ const Footer = () => {
               Ready to order? Send us a message on WhatsApp and we'll get back to you within hours.
             </p>
             <a 
-              href="https://wa.me/1234567890" 
+              href="https://wa.me/+917836903644" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="inline-flex items-center gap-2 bg-[#25D366] text-white px-5 py-2.5 rounded-full hover:bg-[#128C7E] transition-colors"
