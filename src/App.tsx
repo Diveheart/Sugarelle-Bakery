@@ -8,6 +8,9 @@ import CategoryPage from "./pages/CategoryPage";
 import NotFound from "./pages/NotFound";
 import { WhatsAppCartProvider } from "@/hooks/use-whatsapp-cart";
 import FloatingWhatsAppCart from "@/components/FloatingWhatsAppCart";
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 const queryClient = new QueryClient();
 
