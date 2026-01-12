@@ -17,7 +17,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-24 lg:pt-28 pb-12 md:pb-16 lg:pb-20">
       {/* Parallax Background with blur and strong overlay */}
       <div
         className="absolute inset-0 z-0"
