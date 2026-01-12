@@ -1,0 +1,286 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 30 50% 98%;
+    --foreground: 25 30% 15%;
+
+    --card: 30 40% 99%;
+    --card-foreground: 25 30% 15%;
+
+    --popover: 30 40% 99%;
+    --popover-foreground: 25 30% 15%;
+
+    --primary: 350 45% 65%;
+    --primary-foreground: 30 50% 98%;
+
+    --secondary: 30 30% 92%;
+    --secondary-foreground: 25 30% 25%;
+
+    --muted: 30 20% 94%;
+    --muted-foreground: 25 15% 45%;
+
+    --accent: 38 70% 60%;
+    --accent-foreground: 25 30% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 25% 88%;
+    --input: 30 25% 88%;
+    --ring: 350 45% 65%;
+
+    --radius: 1rem;
+
+    /* Custom bakery colors */
+    --rose-gold: 350 45% 65%;
+    --champagne: 38 70% 60%;
+    --cream: 30 50% 98%;
+    --warm-brown: 25 30% 25%;
+    --blush: 350 40% 92%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(350 45% 65% / 0.1), hsl(38 70% 60% / 0.1));
+    --gradient-card: linear-gradient(180deg, hsl(30 40% 99%), hsl(30 30% 96%));
+    --gradient-button: linear-gradient(135deg, hsl(350 45% 65%), hsl(350 50% 55%));
+    --gradient-gold: linear-gradient(135deg, hsl(38 70% 60%), hsl(38 80% 50%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(25 30% 15% / 0.08);
+    --shadow-card: 0 8px 30px -8px hsl(25 30% 15% / 0.12);
+    --shadow-elevated: 0 20px 50px -15px hsl(25 30% 15% / 0.15);
+    --shadow-glow: 0 0 40px hsl(350 45% 65% / 0.2);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 20% 8%;
+    --foreground: 30 30% 95%;
+
+    --card: 25 20% 12%;
+    --card-foreground: 30 30% 95%;
+
+    --popover: 25 20% 12%;
+    --popover-foreground: 30 30% 95%;
+
+    --primary: 350 45% 65%;
+    --primary-foreground: 25 20% 8%;
+
+    --secondary: 25 15% 18%;
+    --secondary-foreground: 30 30% 90%;
+
+    --muted: 25 15% 18%;
+    --muted-foreground: 30 15% 60%;
+
+    --accent: 38 70% 55%;
+    --accent-foreground: 25 20% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 25 15% 20%;
+    --input: 25 15% 20%;
+    --ring: 350 45% 65%;
+
+    --blush: 350 30% 20%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:opacity-90 transition-all duration-300;
+    background: var(--gradient-button);
+  }
+
+  .btn-gold {
+    @apply text-foreground hover:opacity-90 transition-all duration-300;
+    background: var(--gradient-gold);
+  }
+
+  .card-bakery {
+    @apply rounded-2xl border border-border/50 overflow-hidden transition-all duration-500;
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-bakery:hover {
+    box-shadow: var(--shadow-elevated);
+    transform: translateY(-4px);
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background: var(--gradient-button);
+  }
+
+  .parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .badge-fresh {
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-full;
+    background: hsl(var(--blush));
+    color: hsl(var(--primary));
+  }
+
+  .floating-panel {
+    box-shadow: var(--shadow-elevated);
+    backdrop-filter: blur(20px);
+    background: hsl(var(--card) / 0.95);
+  }
+
+  .whatsapp-btn {
+    @apply transition-all duration-300 hover:scale-105;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+  }
+
+  .whatsapp-btn:hover {
+    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+  }
+
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary) / 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.5);
+}
