@@ -1,0 +1,54 @@
+<svg width="500" height="420" viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="transparent"/>
+
+  <!-- Baked -->
+  <text
+    x="250"
+    y="130"
+    text-anchor="middle"
+    font-family="'Pacifico','Brush Script MT',cursive"
+    font-size="90"
+    fill="#1f1f1f"
+  >
+    Baked
+  </text>
+
+  <!-- with -->
+  <text
+    x="250"
+    y="205"
+    text-anchor="middle"
+    font-family="'Montserrat','Arial',sans-serif"
+    font-size="34"
+    letter-spacing="4"
+    fill="#1f1f1f"
+  >
+    WITH
+  </text>
+
+  <!-- Love -->
+  <text
+    x="250"
+    y="310"
+    text-anchor="middle"
+    font-family="'Pacifico','Brush Script MT',cursive"
+    font-size="110"
+    fill="#1f1f1f"
+  >
+    Love
+  </text>
+
+  <!-- Decorative sparkles -->
+  <path d="M110 180 l6 12 l12 6 l-12 6 l-6 12 l-6-12 l-12-6 l12-6z" fill="#1f1f1f"/>
+  <path d="M390 200 l5 10 l10 5 l-10 5 l-5 10 l-5-10 l-10-5 l10-5z" fill="#1f1f1f"/>
+
+  <!-- Small heart -->
+  <path
+    d="M250 350
+       C250 338 268 338 268 350
+       C268 365 250 380 250 390
+       C250 380 232 365 232 350
+       C232 338 250 338 250 350 Z"
+    fill="#1f1f1f"
+  />
+</svg>
