@@ -190,7 +190,7 @@ const CategoryPage = () => {
             We'd love to create something special just for you. Contact us on WhatsApp to discuss your custom order.
           </p>
           <a
-            href="https://wa.me/+917836903644?text=Hi%20Sugarelle%20Bakery!%20I%20have%20a%20custom%20order%20request."
+            href="https://wa.me/+60137843707?text=Hi%20Sugarelle%20Bakery!%20I%20have%20a%20custom%20order%20request."
             target="_blank"
             rel="noopener noreferrer"
           >

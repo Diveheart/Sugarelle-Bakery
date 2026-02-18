@@ -74,7 +74,7 @@ const Navbar = () => {
           ))}
 
           <a
-            href="https://wa.me/+917836903644"
+            href="https://wa.me/+60137843707"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary px-5 py-2.5 rounded-full text-sm font-medium inline-flex items-center gap-2"
@@ -125,7 +125,7 @@ const Navbar = () => {
             </div>
 
             <a
-              href="https://wa.me/+917836903644"
+              href="https://wa.me/+60137843707"
               target="_blank"
               rel="noopener noreferrer"
               className="whatsapp-btn text-white px-5 py-3 rounded-full text-sm font-medium text-center inline-flex items-center justify-center gap-2 mt-2"

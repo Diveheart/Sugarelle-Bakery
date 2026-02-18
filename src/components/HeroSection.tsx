@@ -86,7 +86,7 @@ const HeroSection = () => {
               View Our Cakes
             </Button>
             <a
-              href="https://wa.me/+917836903644"
+              href="https://wa.me/+60137843707"
               target="_blank"
               rel="noopener noreferrer"
             >

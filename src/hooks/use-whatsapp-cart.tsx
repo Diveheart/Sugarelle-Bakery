@@ -15,7 +15,7 @@ type WhatsAppCartContextValue = {
 };
 
 const STORAGE_KEY = "sugarelle_whatsapp_cart_v1";
-const DEFAULT_WHATSAPP_PHONE = "+917836903644";
+const DEFAULT_WHATSAPP_PHONE = "+60137843707";
 
 const WhatsAppCartContext = createContext<WhatsAppCartContextValue | null>(null);
 
