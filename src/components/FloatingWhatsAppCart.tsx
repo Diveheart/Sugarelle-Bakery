@@ -51,7 +51,7 @@ const FloatingWhatsAppCart = () => {
                         <p className="font-medium text-foreground leading-snug">
                           {item.name}
                         </p>
-                        <p className="text-muted-foreground text-sm">${item.price}</p>
+                        <p className="text-muted-foreground text-sm">RM{item.price}</p>
 
                         <div className="mt-2 flex items-center justify-between gap-3">
                           <div className="inline-flex items-center gap-1 rounded-full border border-border px-2 py-1">

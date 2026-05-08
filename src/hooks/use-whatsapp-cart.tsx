@@ -81,7 +81,7 @@ export function WhatsAppCartProvider({
 
     const getWhatsAppCheckoutUrl = (phone = DEFAULT_WHATSAPP_PHONE) => {
       const lines = items
-        .map((i) => `- ${i.name} x${i.quantity}`)
+        .map((i) => `- ${i.name} x${i.quantity} (RM${i.price} each)`)
         .join("\n");
 
       const message = `Hi, I’d like to order the following cakes:\n\n${lines}\n\nThank you!`;

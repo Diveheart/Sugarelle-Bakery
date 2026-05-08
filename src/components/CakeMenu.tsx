@@ -1,62 +1,28 @@
 import { useEffect, useRef, useState } from "react";
 import CakeCard, { Cake } from "./CakeCard";
+import { CAKE_CATEGORIES, CAKE_PRODUCTS } from "@/data/cake-catalog";
 
-// Import cake images
-import cakeChocolate from "@/assets/cake-chocolate.jpg";
-import cakeStrawberry from "@/assets/cake-strawberry.jpg";
-import cakeRedvelvet from "@/assets/cake-redvelvet.jpg";
-import cakeVanilla from "@/assets/cake-vanilla.jpg";
-import cakeCaramel from "@/assets/cake-caramel.jpg";
-import cakeLemon from "@/assets/cake-lemon.jpg";
+type CakeMenuItem = Cake & { categorySlug: string };
 
-export const cakes: Cake[] = [
-  {
-    id: "chocolate-dream",
-    name: "Chocolate Dream",
-    description: "Rich dark chocolate layers with silky ganache and chocolate curls. A chocolate lover's paradise.",
-    price: 45,
-    image: cakeChocolate,
-  },
-  {
-    id: "strawberry-bliss",
-    name: "Strawberry Bliss",
-    description: "Light vanilla sponge with fresh strawberries and whipped cream. Summer in every bite.",
-    price: 42,
-    image: cakeStrawberry,
-  },
-  {
-    id: "red-velvet-royale",
-    name: "Red Velvet Royale",
-    description: "Classic red velvet with cream cheese frosting. Elegant, velvety, and utterly delicious.",
-    price: 48,
-    image: cakeRedvelvet,
-  },
-  {
-    id: "vanilla-celebration",
-    name: "Vanilla Celebration",
-    description: "Classic vanilla buttercream cake with festive sprinkles. Perfect for any celebration.",
-    price: 38,
-    image: cakeVanilla,
-  },
-  {
-    id: "salted-caramel",
-    name: "Salted Caramel Drip",
-    description: "Buttery caramel drip cake with salted caramel popcorn. Sweet, salty, perfection.",
-    price: 52,
-    image: cakeCaramel,
-  },
-  {
-    id: "lemon-sunshine",
-    name: "Lemon Sunshine",
-    description: "Zesty lemon cake with lemon curd and edible flowers. Bright and refreshing.",
-    price: 44,
-    image: cakeLemon,
-  },
-];
+export const cakes: CakeMenuItem[] = CAKE_PRODUCTS.map((p) => ({
+  id: p.id,
+  categorySlug: p.categorySlug,
+  name: p.name,
+  description: p.description,
+  price: p.startingPriceRm,
+  priceBySizeRm: p.priceBySizeRm,
+  image: p.image,
+}));
 
 const CakeMenu = () => {
   const [visibleCards, setVisibleCards] = useState<Set<string>>(new Set());
   const cardRefs = useRef<Map<string, HTMLDivElement>>(new Map());
+  const [selectedCategory, setSelectedCategory] = useState<string>("all");
+
+  const filteredCakes =
+    selectedCategory === "all"
+      ? cakes
+      : cakes.filter((cake) => cake.categorySlug === selectedCategory);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -94,9 +60,38 @@ const CakeMenu = () => {
           </p>
         </div>
 
+        {/* Category Tabs */}
+        <div className="flex flex-wrap justify-center gap-2 mb-10">
+          <button
+            type="button"
+            onClick={() => setSelectedCategory("all")}
+            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+              selectedCategory === "all"
+                ? "bg-primary text-white"
+                : "bg-background text-foreground hover:bg-muted"
+            }`}
+          >
+            All Cakes
+          </button>
+          {CAKE_CATEGORIES.map((category) => (
+            <button
+              key={category.slug}
+              type="button"
+              onClick={() => setSelectedCategory(category.slug)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                selectedCategory === category.slug
+                  ? "bg-primary text-white"
+                  : "bg-background text-foreground hover:bg-muted"
+              }`}
+            >
+              {category.name}
+            </button>
+          ))}
+        </div>
+
         {/* Cake Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {cakes.map((cake, index) => (
+          {filteredCakes.map((cake, index) => (
             <div
               key={cake.id}
               ref={(el) => {

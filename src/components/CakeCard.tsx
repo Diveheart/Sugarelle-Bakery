@@ -1,12 +1,17 @@
 import { ShoppingBag, Plus, Minus, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useWhatsAppCart } from "@/hooks/use-whatsapp-cart";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { useMemo, useState } from "react";
+import { CAKE_SIZES_IN } from "@/data/cake-catalog";
 
 export interface Cake {
   id: string;
   name: string;
   description: string;
+  /** Size-6 starting price (RM) */
   price: number;
+  priceBySizeRm?: Partial<Record<number, number>>;
   image: string;
 }
 
@@ -14,29 +19,54 @@ interface CakeCardProps {
   cake: Cake;
 }
 
+function getFallbackPriceForSize(startingPriceRm: number, sizeIn: number) {
+  if (sizeIn <= 6) return Math.round(startingPriceRm);
+  const steps = Math.max(0, Math.floor((sizeIn - 6) / 2));
+  const multiplier = 1 + steps * 0.25;
+  return Math.round(startingPriceRm * multiplier);
+}
+
 const CakeCard = ({ cake }: CakeCardProps) => {
   const { addItem, setQuantity, removeItem, items } = useWhatsAppCart();
-  const cartItem = items.find((item) => item.id === cake.id);
+  const [sizeIn, setSizeIn] = useState<number>(CAKE_SIZES_IN[0]);
+
+  const unitPriceRm = useMemo(() => {
+    const explicit = cake.priceBySizeRm?.[sizeIn];
+    if (typeof explicit === "number" && Number.isFinite(explicit)) return explicit;
+    return getFallbackPriceForSize(cake.price, sizeIn);
+  }, [cake.price, cake.priceBySizeRm, sizeIn]);
+
+  const cartId = `${cake.id}-${sizeIn}`;
+  const cartName = `${cake.name} (${sizeIn}\")`;
+  const cartItem = items.find((item) => item.id === cartId);
   const quantity = cartItem?.quantity || 0;
 
   const handleIncrement = () => {
     if (quantity === 0) {
-      addItem(cake, 1);
+      addItem(
+        {
+          ...cake,
+          id: cartId,
+          name: cartName,
+          price: unitPriceRm,
+        },
+        1,
+      );
     } else {
-      setQuantity(cake.id, quantity + 1);
+      setQuantity(cartId, quantity + 1);
     }
   };
 
   const handleDecrement = () => {
     if (quantity > 1) {
-      setQuantity(cake.id, quantity - 1);
+      setQuantity(cartId, quantity - 1);
     } else if (quantity === 1) {
-      removeItem(cake.id);
+      removeItem(cartId);
     }
   };
 
   const handleRemove = () => {
-    removeItem(cake.id);
+    removeItem(cartId);
   };
 
   return (
@@ -61,8 +91,29 @@ const CakeCard = ({ cake }: CakeCardProps) => {
           {cake.description}
         </p>
 
-        <div className="flex items-center justify-between gap-4">
-          <span className="font-display text-2xl font-bold text-accent">${cake.price}</span>
+        <div className="flex items-end justify-between gap-4">
+          <div className="min-w-0">
+            <div className="flex items-baseline gap-2">
+              <span className="font-display text-2xl font-bold text-accent">
+                RM{unitPriceRm}
+              </span>
+              <span className="text-muted-foreground text-xs">/ {sizeIn}\"</span>
+            </div>
+            <div className="mt-2 max-w-[180px]">
+              <Select value={String(sizeIn)} onValueChange={(v) => setSizeIn(Number(v))}>
+                <SelectTrigger className="h-9 rounded-full bg-background">
+                  <SelectValue placeholder="Select size" />
+                </SelectTrigger>
+                <SelectContent>
+                  {CAKE_SIZES_IN.map((s) => (
+                    <SelectItem key={s} value={String(s)}>
+                      {s}\"
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
 
           {quantity === 0 ? (
             <Button

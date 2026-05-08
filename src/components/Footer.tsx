@@ -1,14 +1,9 @@
 import { Instagram, MessageCircle, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import sugarelleLogo from "@/assets/sugarelle-logo.jpg";
+import { CAKE_CATEGORIES } from "@/data/cake-catalog";
 
-const categories = [
-  { name: "Signature Cakes", path: "/signature-cakes" },
-  { name: "Cheesecakes", path: "/cheesecakes" },
-  { name: "Custom Cakes", path: "/custom-cakes" },
-  { name: "Cupcakes", path: "/cupcakes" },
-  { name: "Desserts", path: "/desserts" },
-];
+const categories = CAKE_CATEGORIES.map((c) => ({ name: c.name, path: `/${c.slug}` }));
 
 const Footer = () => {
   return (

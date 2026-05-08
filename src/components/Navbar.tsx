@@ -2,14 +2,15 @@ import { useState, useEffect } from "react";
 import { Menu, X, MessageCircle, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import sugarelleLogo from "@/assets/sugarelle-logo.jpg";
-// category dropdown removed; categories rendered as individual links
+import { CAKE_CATEGORIES } from "@/data/cake-catalog";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
-const categories = [
-  { name: "Signature Cakes", path: "/signature-cakes" },
-  { name: "Cheesecakes", path: "/cheesecakes" },
-  { name: "Celebration Cakes", path: "/celebration-cakes" },
-  { name: "Custom Cakes", path: "/custom-cakes" },
-];
+const categories = CAKE_CATEGORIES.map((c) => ({ name: c.name, path: `/${c.slug}` }));
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -62,16 +63,24 @@ const Navbar = () => {
             Home
           </Link>
 
-          {/* Category links (moved from dropdown) */}
-          {categories.map((category) => (
-            <Link
-              key={category.path}
-              to={category.path}
-              className={linkColorClass("px-3 py-2 rounded-full")}
-            >
-              {category.name}
-            </Link>
-          ))}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button
+                type="button"
+                className={linkColorClass("px-3 py-2 rounded-full inline-flex items-center gap-1")}
+              >
+                Cake Category
+                <ChevronDown className="w-4 h-4" />
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="start" className="w-64">
+              {categories.map((category) => (
+                <DropdownMenuItem key={category.path} asChild>
+                  <Link to={category.path}>{category.name}</Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
 
           <a
             href="https://wa.me/+60137843707"
@@ -112,6 +121,7 @@ const Navbar = () => {
             </Link>
 
             <div className="border-t border-border pt-4 mt-2">
+              <p className="text-sm font-semibold text-foreground/80 mb-2">Cake Category</p>
               {categories.map((category) => (
                 <Link
                   key={category.path}
