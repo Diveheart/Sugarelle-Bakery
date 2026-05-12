@@ -108,9 +108,9 @@ const AboutSection = () => {
             <div className="w-16 h-px bg-border mx-auto" />
 
             <p className="italic text-foreground/80">
-              This is not a departure from who we were.
+              We may not be the best in everyone’s eyes,
               <br />
-              It is a quieter, more considered expression of who we have become.
+              but we will always strive to give our very best for you.
             </p>
 
             {/* Signature */}
