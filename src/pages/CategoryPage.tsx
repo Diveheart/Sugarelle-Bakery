@@ -59,6 +59,8 @@ const CategoryPage = () => {
                   description: product.description,
                   price: product.startingPriceRm,
                   priceBySizeRm: product.priceBySizeRm,
+                  availableSizesIn: product.availableSizesIn,
+                  hideSizeSelector: product.hideSizeSelector,
                   image: product.image,
                 }}
               />

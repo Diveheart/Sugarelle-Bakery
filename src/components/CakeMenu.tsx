@@ -11,6 +11,8 @@ export const cakes: CakeMenuItem[] = CAKE_PRODUCTS.map((p) => ({
   description: p.description,
   price: p.startingPriceRm,
   priceBySizeRm: p.priceBySizeRm,
+  availableSizesIn: p.availableSizesIn,
+  hideSizeSelector: p.hideSizeSelector,
   image: p.image,
 }));
 
@@ -24,6 +26,15 @@ const CakeMenu = () => {
       ? cakes
       : cakes.filter((cake) => cake.categorySlug === selectedCategory);
 
+  // Show filtered cards immediately when the category changes (avoids invisible cards)
+  useEffect(() => {
+    const list =
+      selectedCategory === "all"
+        ? cakes
+        : cakes.filter((cake) => cake.categorySlug === selectedCategory);
+    setVisibleCards(new Set(list.map((cake) => cake.id)));
+  }, [selectedCategory]);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -36,15 +47,20 @@ const CakeMenu = () => {
           }
         });
       },
-      { threshold: 0.1, rootMargin: "50px" }
+      { threshold: 0.1, rootMargin: "50px" },
     );
 
-    cardRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref);
+    const frame = requestAnimationFrame(() => {
+      cardRefs.current.forEach((ref) => {
+        if (ref) observer.observe(ref);
+      });
     });
 
-    return () => observer.disconnect();
-  }, []);
+    return () => {
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+    };
+  }, [selectedCategory]);
 
   return (
     <section id="menu" className="section-padding bg-secondary/30">
@@ -90,12 +106,16 @@ const CakeMenu = () => {
         </div>
 
         {/* Cake Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div
+          key={selectedCategory}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+        >
           {filteredCakes.map((cake, index) => (
             <div
               key={cake.id}
               ref={(el) => {
                 if (el) cardRefs.current.set(cake.id, el);
+                else cardRefs.current.delete(cake.id);
               }}
               data-cake-id={cake.id}
               className={`transition-all duration-700 ${

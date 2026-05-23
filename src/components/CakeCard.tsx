@@ -2,16 +2,19 @@ import { ShoppingBag, Plus, Minus, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useWhatsAppCart } from "@/hooks/use-whatsapp-cart";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { CAKE_SIZES_IN } from "@/data/cake-catalog";
+import { productImageSrc } from "@/lib/product-image";
 
 export interface Cake {
   id: string;
   name: string;
   description: string;
-  /** Size-6 starting price (RM) */
+  /** Default / lowest price (RM) */
   price: number;
   priceBySizeRm?: Partial<Record<number, number>>;
+  availableSizesIn?: readonly number[];
+  hideSizeSelector?: boolean;
   image: string;
 }
 
@@ -26,18 +29,37 @@ function getFallbackPriceForSize(startingPriceRm: number, sizeIn: number) {
   return Math.round(startingPriceRm * multiplier);
 }
 
+function resolveSizes(cake: Cake): number[] {
+  if (cake.hideSizeSelector) return [];
+  if (cake.availableSizesIn?.length) return [...cake.availableSizesIn];
+  if (cake.priceBySizeRm && Object.keys(cake.priceBySizeRm).length > 0) {
+    return Object.keys(cake.priceBySizeRm)
+      .map(Number)
+      .sort((a, b) => a - b);
+  }
+  return [...CAKE_SIZES_IN];
+}
+
 const CakeCard = ({ cake }: CakeCardProps) => {
   const { addItem, setQuantity, removeItem, items } = useWhatsAppCart();
-  const [sizeIn, setSizeIn] = useState<number>(CAKE_SIZES_IN[0]);
+  const sizes = useMemo(() => resolveSizes(cake), [cake]);
+  const [sizeIn, setSizeIn] = useState<number>(() => sizes[0] ?? CAKE_SIZES_IN[0]);
+
+  useEffect(() => {
+    if (sizes.length > 0 && !sizes.includes(sizeIn)) {
+      setSizeIn(sizes[0]);
+    }
+  }, [sizes, sizeIn]);
 
   const unitPriceRm = useMemo(() => {
+    if (cake.hideSizeSelector) return cake.price;
     const explicit = cake.priceBySizeRm?.[sizeIn];
     if (typeof explicit === "number" && Number.isFinite(explicit)) return explicit;
     return getFallbackPriceForSize(cake.price, sizeIn);
-  }, [cake.price, cake.priceBySizeRm, sizeIn]);
+  }, [cake.hideSizeSelector, cake.price, cake.priceBySizeRm, sizeIn]);
 
-  const cartId = `${cake.id}-${sizeIn}`;
-  const cartName = `${cake.name} (${sizeIn}\")`;
+  const cartId = cake.hideSizeSelector ? cake.id : `${cake.id}-${sizeIn}`;
+  const cartName = cake.hideSizeSelector ? cake.name : `${cake.name} (${sizeIn}\")`;
   const cartItem = items.find((item) => item.id === cartId);
   const quantity = cartItem?.quantity || 0;
 
@@ -74,10 +96,16 @@ const CakeCard = ({ cake }: CakeCardProps) => {
       {/* Image Container */}
       <div className="relative aspect-square overflow-hidden">
         <img
-          src={cake.image}
+          src={productImageSrc(cake.image)}
           alt={cake.name}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           loading="lazy"
+          onError={(e) => {
+            const img = e.currentTarget;
+            if (img.dataset.fallbackApplied) return;
+            img.dataset.fallbackApplied = "1";
+            img.src = `https://placehold.co/800x800/f5f0eb/8a7a6e?text=${encodeURIComponent(cake.name)}`;
+          }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
@@ -97,22 +125,26 @@ const CakeCard = ({ cake }: CakeCardProps) => {
               <span className="font-display text-2xl font-bold text-accent">
                 RM{unitPriceRm}
               </span>
-              <span className="text-muted-foreground text-xs">/ {sizeIn}\"</span>
+              {!cake.hideSizeSelector && (
+                <span className="text-muted-foreground text-xs">/ {sizeIn}\"</span>
+              )}
             </div>
-            <div className="mt-2 max-w-[180px]">
-              <Select value={String(sizeIn)} onValueChange={(v) => setSizeIn(Number(v))}>
-                <SelectTrigger className="h-9 rounded-full bg-background">
-                  <SelectValue placeholder="Select size" />
-                </SelectTrigger>
-                <SelectContent>
-                  {CAKE_SIZES_IN.map((s) => (
-                    <SelectItem key={s} value={String(s)}>
-                      {s}\"
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
+            {!cake.hideSizeSelector && sizes.length > 0 && (
+              <div className="mt-2 max-w-[180px]">
+                <Select value={String(sizeIn)} onValueChange={(v) => setSizeIn(Number(v))}>
+                  <SelectTrigger className="h-9 rounded-full bg-background">
+                    <SelectValue placeholder="Select size" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {sizes.map((s) => (
+                      <SelectItem key={s} value={String(s)}>
+                        {s}\"
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            )}
           </div>
 
           {quantity === 0 ? (

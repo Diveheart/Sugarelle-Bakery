@@ -3,6 +3,7 @@ import { MessageCircle, Minus, Plus, ShoppingBag, Trash2 } from "lucide-react";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { useWhatsAppCart } from "@/hooks/use-whatsapp-cart";
+import { productImageSrc } from "@/lib/product-image";
 
 const FloatingWhatsAppCart = () => {
   const [open, setOpen] = useState(false);
@@ -42,7 +43,7 @@ const FloatingWhatsAppCart = () => {
                   {items.map((item) => (
                     <div key={item.id} className="flex gap-3">
                       <img
-                        src={item.image}
+                        src={productImageSrc(item.image)}
                         alt={item.name}
                         className="h-16 w-16 rounded-lg object-cover"
                         loading="lazy"
