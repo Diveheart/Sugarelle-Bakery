@@ -92,9 +92,9 @@ const CakeCard = ({ cake }: CakeCardProps) => {
   };
 
   return (
-    <div className="card-bakery group">
+    <div className="card-bakery group max-sm:rounded-xl">
       {/* Image Container */}
-      <div className="relative aspect-square overflow-hidden">
+      <div className="relative aspect-square overflow-hidden max-sm:aspect-[4/5]">
         <img
           src={productImageSrc(cake.image)}
           alt={cake.name}
@@ -111,28 +111,28 @@ const CakeCard = ({ cake }: CakeCardProps) => {
       </div>
 
       {/* Content */}
-      <div className="p-5 md:p-6">
-        <h3 className="font-display text-xl md:text-2xl font-semibold mb-2 text-foreground">
+      <div className="p-3 sm:p-5 md:p-6">
+        <h3 className="font-display text-sm sm:text-xl md:text-2xl font-semibold mb-1 sm:mb-2 text-foreground line-clamp-2 sm:line-clamp-none">
           {cake.name}
         </h3>
-        <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+        <p className="hidden sm:block text-muted-foreground text-sm mb-4 line-clamp-2">
           {cake.description}
         </p>
 
-        <div className="flex items-end justify-between gap-4">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between sm:gap-4">
           <div className="min-w-0">
-            <div className="flex items-baseline gap-2">
-              <span className="font-display text-2xl font-bold text-accent">
+            <div className="flex items-baseline gap-1 sm:gap-2">
+              <span className="font-display text-base sm:text-2xl font-bold text-accent">
                 RM{unitPriceRm}
               </span>
               {!cake.hideSizeSelector && (
-                <span className="text-muted-foreground text-xs">/ {sizeIn}\"</span>
+                <span className="text-muted-foreground text-[10px] sm:text-xs">/ {sizeIn}\"</span>
               )}
             </div>
             {!cake.hideSizeSelector && sizes.length > 0 && (
-              <div className="mt-2 max-w-[180px]">
+              <div className="mt-1.5 sm:mt-2 max-w-full sm:max-w-[180px]">
                 <Select value={String(sizeIn)} onValueChange={(v) => setSizeIn(Number(v))}>
-                  <SelectTrigger className="h-9 rounded-full bg-background">
+                  <SelectTrigger className="h-8 sm:h-9 rounded-full bg-background text-xs sm:text-sm">
                     <SelectValue placeholder="Select size" />
                   </SelectTrigger>
                   <SelectContent>
@@ -151,23 +151,24 @@ const CakeCard = ({ cake }: CakeCardProps) => {
             <Button
               type="button"
               onClick={handleIncrement}
-              className="whatsapp-btn text-white rounded-full px-4 py-2 inline-flex items-center gap-2"
+              className="whatsapp-btn text-white rounded-full w-full sm:w-auto px-3 py-1.5 sm:px-4 sm:py-2 inline-flex items-center justify-center gap-1.5 sm:gap-2 text-xs sm:text-sm"
             >
-              <ShoppingBag className="w-4 h-4" />
-              Add to cart
+              <ShoppingBag className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span className="sm:hidden">Add</span>
+              <span className="hidden sm:inline">Add to cart</span>
             </Button>
           ) : (
-            <div className="flex items-center gap-2 bg-secondary rounded-full px-2 py-1">
+            <div className="flex items-center justify-center sm:justify-start gap-1 sm:gap-2 bg-secondary rounded-full px-1.5 py-0.5 sm:px-2 sm:py-1">
               <Button
                 type="button"
                 size="icon"
                 variant="ghost"
                 onClick={handleDecrement}
-                className="h-8 w-8 rounded-full hover:bg-muted"
+                className="h-7 w-7 sm:h-8 sm:w-8 rounded-full hover:bg-muted"
               >
-                <Minus className="w-4 h-4" />
+                <Minus className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               </Button>
-              <span className="font-semibold text-foreground min-w-[24px] text-center">
+              <span className="font-semibold text-foreground min-w-[20px] sm:min-w-[24px] text-center text-sm">
                 {quantity}
               </span>
               <Button
@@ -175,18 +176,18 @@ const CakeCard = ({ cake }: CakeCardProps) => {
                 size="icon"
                 variant="ghost"
                 onClick={handleIncrement}
-                className="h-8 w-8 rounded-full hover:bg-muted"
+                className="h-7 w-7 sm:h-8 sm:w-8 rounded-full hover:bg-muted"
               >
-                <Plus className="w-4 h-4" />
+                <Plus className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               </Button>
               <Button
                 type="button"
                 size="icon"
                 variant="ghost"
                 onClick={handleRemove}
-                className="h-8 w-8 rounded-full hover:bg-destructive/10 text-destructive"
+                className="h-7 w-7 sm:h-8 sm:w-8 rounded-full hover:bg-destructive/10 text-destructive"
               >
-                <Trash2 className="w-4 h-4" />
+                <Trash2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               </Button>
             </div>
           )}
