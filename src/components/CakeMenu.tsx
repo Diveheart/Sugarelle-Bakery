@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import CakeCard, { Cake } from "./CakeCard";
 import { CAKE_CATEGORIES, CAKE_PRODUCTS } from "@/data/cake-catalog";
 
-type CakeMenuItem = Cake & { categorySlug: string };
+type CakeMenuItem = Cake;
 
 export const cakes: CakeMenuItem[] = CAKE_PRODUCTS.map((p) => ({
   id: p.id,

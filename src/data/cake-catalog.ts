@@ -27,7 +27,7 @@ export const CAKE_CATEGORIES: CakeCategory[] = [
   {
     slug: "biscoff-cake",
     name: "Biscoff Cake",
-    description: "Caramelized Biscoff goodness in every bite.",
+    description: "Fluffy vanilla sponge with rich Lotus Biscoff cream and crunchy biscuit topping.",
     startingPriceRm: 45,
   },
   {
@@ -38,8 +38,8 @@ export const CAKE_CATEGORIES: CakeCategory[] = [
   },
   {
     slug: "custom-cake",
-    name: "Custom Cake",
-    description: "Personalized cakes made to match your theme and occasion.",
+    name: "Custom Cakes",
+    description: "From elegant birthday cakes to bespoke celebration designs, each cake is thoughtfully crafted to bring your vision to life. Contact us for a personalized quotation and consultation.",
     startingPriceRm: 55,
   },
   {
@@ -51,31 +51,31 @@ export const CAKE_CATEGORIES: CakeCategory[] = [
   {
     slug: "double-premium-cake",
     name: "Double Premium Cake",
-    description: "Extra indulgent cakes with premium fillings and finishes.",
+    description: "Made with premium ingredients, featuring rich chocolate moist cake or buttery vanilla cake layers, finished with our signature premium frosting.",
     startingPriceRm: 130,
   },
   {
     slug: "pavlova-cake",
     name: "Pavlova Cake",
-    description: "Crisp meringue, soft center, and fresh fruity toppings.",
+    description: "Delicate meringue layered with luscious cream and fresh fruits, creating the perfect balance of sweetness and freshness.",
     startingPriceRm: 75,
   },
   {
     slug: "premium-economy-cake",
     name: "Premium Economy Cake",
-    description: "A premium touch while keeping it budget-friendly.",
+    description: "Soft sponge cake layered with our signature cream, made with quality ingredients for every celebration.",
     startingPriceRm: 65,
   },
   {
     slug: "snowy-cheese",
-    name: "Snowy Cheese",
-    description: "Creamy, cheesy, and irresistibly soft.",
+    name: "Snowy Cheese Cake",
+    description: "Soft cake topped with creamy cheese and delicate cheese flakes.",
     startingPriceRm: 70,
   },
   {
     slug: "wedding-engagement-cake",
-    name: "Wedding-Engagement Cake",
-    description: "Elegant statement cakes for your biggest celebrations.",
+    name: "Wedding & Engagement Cake",
+    description: "Elegant cakes crafted for your special day. Starting from RM120. Contact us via WhatsApp for a personalized quotation and custom design consultation.",
     startingPriceRm: 120,
   },
 ];
@@ -272,543 +272,543 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
     ]
   },
   {
-    "id": "custom-cake-custom-cake",
+    "id": "custom-cake-custom-cakes",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake",
+    "name": "Custom Cakes",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-2",
+    "id": "custom-cake-custom-cakes-2",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 2",
+    "name": "Custom Cakes 2",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-2.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-2.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-3",
+    "id": "custom-cake-custom-cakes-3",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 3",
+    "name": "Custom Cakes 3",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-3.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-3.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-4",
+    "id": "custom-cake-custom-cakes-4",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 4",
+    "name": "Custom Cakes 4",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-4.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-4.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-5",
+    "id": "custom-cake-custom-cakes-5",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 5",
+    "name": "Custom Cakes 5",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-5.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-5.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-6",
+    "id": "custom-cake-custom-cakes-6",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 6",
+    "name": "Custom Cakes 6",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-6.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-6.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-7",
+    "id": "custom-cake-custom-cakes-7",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 7",
+    "name": "Custom Cakes 7",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-7.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-7.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-8",
+    "id": "custom-cake-custom-cakes-8",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 8",
+    "name": "Custom Cakes 8",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-8.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-8.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-9",
+    "id": "custom-cake-custom-cakes-9",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 9",
+    "name": "Custom Cakes 9",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-9.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-9.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-10",
+    "id": "custom-cake-custom-cakes-10",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 10",
+    "name": "Custom Cakes 10",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-10.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-10.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-11",
+    "id": "custom-cake-custom-cakes-11",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 11",
+    "name": "Custom Cakes 11",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-11.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-11.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-12",
+    "id": "custom-cake-custom-cakes-12",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 12",
+    "name": "Custom Cakes 12",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-12.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-12.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-13",
+    "id": "custom-cake-custom-cakes-13",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 13",
+    "name": "Custom Cakes 13",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-13.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-13.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-14",
+    "id": "custom-cake-custom-cakes-14",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 14",
+    "name": "Custom Cakes 14",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-14.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-14.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-15",
+    "id": "custom-cake-custom-cakes-15",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 15",
+    "name": "Custom Cakes 15",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-15.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-15.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-16",
+    "id": "custom-cake-custom-cakes-16",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 16",
+    "name": "Custom Cakes 16",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-16.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-16.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-17",
+    "id": "custom-cake-custom-cakes-17",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 17",
+    "name": "Custom Cakes 17",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-17.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-17.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-18",
+    "id": "custom-cake-custom-cakes-18",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 18",
+    "name": "Custom Cakes 18",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-18.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-18.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-19",
+    "id": "custom-cake-custom-cakes-19",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 19",
+    "name": "Custom Cakes 19",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-19.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-19.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-20",
+    "id": "custom-cake-custom-cakes-20",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 20",
+    "name": "Custom Cakes 20",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-20.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-20.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-21",
+    "id": "custom-cake-custom-cakes-21",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 21",
+    "name": "Custom Cakes 21",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-21.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-21.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-22",
+    "id": "custom-cake-custom-cakes-22",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 22",
+    "name": "Custom Cakes 22",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-22.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-22.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-23",
+    "id": "custom-cake-custom-cakes-23",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 23",
+    "name": "Custom Cakes 23",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-23.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-23.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-24",
+    "id": "custom-cake-custom-cakes-24",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 24",
+    "name": "Custom Cakes 24",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-24.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-24.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-25",
+    "id": "custom-cake-custom-cakes-25",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 25",
+    "name": "Custom Cakes 25",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-25.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-25.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-26",
+    "id": "custom-cake-custom-cakes-26",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 26",
+    "name": "Custom Cakes 26",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-26.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-26.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-27",
+    "id": "custom-cake-custom-cakes-27",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 27",
+    "name": "Custom Cakes 27",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-27.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-27.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-28",
+    "id": "custom-cake-custom-cakes-28",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 28",
+    "name": "Custom Cakes 28",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-28.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-28.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-29",
+    "id": "custom-cake-custom-cakes-29",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 29",
+    "name": "Custom Cakes 29",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-29.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-29.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-30",
+    "id": "custom-cake-custom-cakes-30",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 30",
+    "name": "Custom Cakes 30",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-30.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-30.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-31",
+    "id": "custom-cake-custom-cakes-31",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 31",
+    "name": "Custom Cakes 31",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-31.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-31.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-32",
+    "id": "custom-cake-custom-cakes-32",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 32",
+    "name": "Custom Cakes 32",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-32.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-32.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-33",
+    "id": "custom-cake-custom-cakes-33",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 33",
+    "name": "Custom Cakes 33",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-33.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-33.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-34",
+    "id": "custom-cake-custom-cakes-34",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 34",
+    "name": "Custom Cakes 34",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-34.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-34.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-35",
+    "id": "custom-cake-custom-cakes-35",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 35",
+    "name": "Custom Cakes 35",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-35.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-35.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-36",
+    "id": "custom-cake-custom-cakes-36",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 36",
+    "name": "Custom Cakes 36",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-36.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-36.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-37",
+    "id": "custom-cake-custom-cakes-37",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 37",
+    "name": "Custom Cakes 37",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-37.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-37.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-38",
+    "id": "custom-cake-custom-cakes-38",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 38",
+    "name": "Custom Cakes 38",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-38.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-38.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-39",
+    "id": "custom-cake-custom-cakes-39",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 39",
+    "name": "Custom Cakes 39",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-39.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-39.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-40",
+    "id": "custom-cake-custom-cakes-40",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 40",
+    "name": "Custom Cakes 40",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-40.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-40.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-41",
+    "id": "custom-cake-custom-cakes-41",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 41",
+    "name": "Custom Cakes 41",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-41.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-41.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-42",
+    "id": "custom-cake-custom-cakes-42",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 42",
+    "name": "Custom Cakes 42",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-42.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-42.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-43",
+    "id": "custom-cake-custom-cakes-43",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 43",
+    "name": "Custom Cakes 43",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-43.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-43.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-44",
+    "id": "custom-cake-custom-cakes-44",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 44",
+    "name": "Custom Cakes 44",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-44.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-44.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-45",
+    "id": "custom-cake-custom-cakes-45",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 45",
+    "name": "Custom Cakes 45",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-45.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-45.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-46",
+    "id": "custom-cake-custom-cakes-46",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 46",
+    "name": "Custom Cakes 46",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-46.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-46.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-47",
+    "id": "custom-cake-custom-cakes-47",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 47",
+    "name": "Custom Cakes 47",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-47.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-47.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-48",
+    "id": "custom-cake-custom-cakes-48",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 48",
+    "name": "Custom Cakes 48",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-48.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-48.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-49",
+    "id": "custom-cake-custom-cakes-49",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 49",
+    "name": "Custom Cakes 49",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-49.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-49.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-50",
+    "id": "custom-cake-custom-cakes-50",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 50",
+    "name": "Custom Cakes 50",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-50.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-50.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-51",
+    "id": "custom-cake-custom-cakes-51",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 51",
+    "name": "Custom Cakes 51",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-51.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-51.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-52",
+    "id": "custom-cake-custom-cakes-52",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 52",
+    "name": "Custom Cakes 52",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-52.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-52.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-53",
+    "id": "custom-cake-custom-cakes-53",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 53",
+    "name": "Custom Cakes 53",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-53.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-53.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-54",
+    "id": "custom-cake-custom-cakes-54",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 54",
+    "name": "Custom Cakes 54",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-54.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-54.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-55",
+    "id": "custom-cake-custom-cakes-55",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 55",
+    "name": "Custom Cakes 55",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-55.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-55.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-56",
+    "id": "custom-cake-custom-cakes-56",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 56",
+    "name": "Custom Cakes 56",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-56.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-56.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-57",
+    "id": "custom-cake-custom-cakes-57",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 57",
+    "name": "Custom Cakes 57",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-57.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-57.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-58",
+    "id": "custom-cake-custom-cakes-58",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 58",
+    "name": "Custom Cakes 58",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-58.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-58.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-59",
+    "id": "custom-cake-custom-cakes-59",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 59",
+    "name": "Custom Cakes 59",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-59.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-59.webp",
     "hideSizeSelector": true
   },
   {
-    "id": "custom-cake-custom-cake-60",
+    "id": "custom-cake-custom-cakes-60",
     "categorySlug": "custom-cake",
-    "name": "Custom Cake 60",
+    "name": "Custom Cakes 60",
     "startingPriceRm": 55,
     "description": "From RM55. Contact us on WhatsApp for sizing and custom quotes.",
-    "image": "/products/custom-cake/custom-cake-custom-cake-60.webp",
+    "image": "/products/custom-cake/custom-cake-custom-cakes-60.webp",
     "hideSizeSelector": true
   },
   {
@@ -841,7 +841,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-assorted-sandwich",
     "categorySlug": "dessert",
-    "name": "ASSORTED Sandwich",
+    "name": "Assorted Sandwich",
     "startingPriceRm": 25,
     "description": "From RM25.",
     "image": "/products/dessert/dessert-assorted-sandwich.webp",
@@ -850,7 +850,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-assorted-sandwich-2",
     "categorySlug": "dessert",
-    "name": "ASSORTED Sandwich",
+    "name": "Assorted Sandwich",
     "startingPriceRm": 25,
     "description": "From RM25.",
     "image": "/products/dessert/dessert-assorted-sandwich-2.webp",
@@ -859,7 +859,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-brownies-choc-8",
     "categorySlug": "dessert",
-    "name": "Brownies choc 8",
+    "name": "Brownies Choc 8",
     "startingPriceRm": 38,
     "description": "From RM38.",
     "image": "/products/dessert/dessert-brownies-choc-8.webp",
@@ -868,7 +868,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-brownies-choc-8-2",
     "categorySlug": "dessert",
-    "name": "Brownies choc 8",
+    "name": "Brownies Choc 8",
     "startingPriceRm": 38,
     "description": "From RM38.",
     "image": "/products/dessert/dessert-brownies-choc-8-2.webp",
@@ -877,7 +877,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-cheesetart-bajet",
     "categorySlug": "dessert",
-    "name": "Cheesetart bajet",
+    "name": "Cheesetart Bajet",
     "startingPriceRm": 25,
     "description": "From RM25.",
     "image": "/products/dessert/dessert-cheesetart-bajet.webp",
@@ -895,7 +895,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-cheesetart-separa-montok",
     "categorySlug": "dessert",
-    "name": "Cheesetart Separa montok",
+    "name": "Cheesetart Separa Montok",
     "startingPriceRm": 25,
     "description": "From RM25.",
     "image": "/products/dessert/dessert-cheesetart-separa-montok.webp",
@@ -931,7 +931,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-creampuff-montok-creamy-custard",
     "categorySlug": "dessert",
-    "name": "Creampuff montok creamy custard",
+    "name": "Creampuff Montok Creamy Custard",
     "startingPriceRm": 25,
     "description": "From RM25.",
     "image": "/products/dessert/dessert-creampuff-montok-creamy-custard.webp",
@@ -949,7 +949,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-hokaido-cupcake-pandan-vanilla-red-velvet",
     "categorySlug": "dessert",
-    "name": "Hokaido Cupcake -pandan Vanilla Red Velvet",
+    "name": "Hokaido Cupcake Pandan Vanilla Red Velvet",
     "startingPriceRm": 25,
     "description": "From RM25.",
     "image": "/products/dessert/dessert-hokaido-cupcake-pandan-vanilla-red-velvet.webp",
@@ -958,7 +958,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-kek-batik-choc",
     "categorySlug": "dessert",
-    "name": "Kek batik choc",
+    "name": "Kek Batik Choc",
     "startingPriceRm": 25,
     "description": "From RM25.",
     "image": "/products/dessert/dessert-kek-batik-choc.webp",
@@ -967,7 +967,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-kek-batik-indulgence-8",
     "categorySlug": "dessert",
-    "name": "Kek batik indulgence 8",
+    "name": "Kek Batik Indulgence 8",
     "startingPriceRm": 65,
     "description": "From RM65.",
     "image": "/products/dessert/dessert-kek-batik-indulgence-8.webp",
@@ -976,7 +976,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-kek-choc-merelit",
     "categorySlug": "dessert",
-    "name": "Kek choc merelit",
+    "name": "Kek Choc Merelit",
     "startingPriceRm": 25,
     "description": "From RM25.",
     "image": "/products/dessert/dessert-kek-choc-merelit.webp",
@@ -1021,7 +1021,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-muffin-aneka-perisa",
     "categorySlug": "dessert",
-    "name": "Muffin aneka perisa",
+    "name": "Muffin Aneka Perisa",
     "startingPriceRm": 25,
     "description": "From RM25.",
     "image": "/products/dessert/dessert-muffin-aneka-perisa.webp",
@@ -1030,7 +1030,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-nuttela-oat-bar",
     "categorySlug": "dessert",
-    "name": "Nuttela oat bar",
+    "name": "Nuttela Oat Bar",
     "startingPriceRm": 25,
     "description": "From RM25.",
     "image": "/products/dessert/dessert-nuttela-oat-bar.webp",
@@ -1039,7 +1039,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-nuttela-oat-bar-2",
     "categorySlug": "dessert",
-    "name": "Nuttela oat bar",
+    "name": "Nuttela Oat Bar",
     "startingPriceRm": 25,
     "description": "From RM25.",
     "image": "/products/dessert/dessert-nuttela-oat-bar-2.webp",
@@ -1057,7 +1057,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-slice-cake-bajet-pandan-gula-melaka-blueberry",
     "categorySlug": "dessert",
-    "name": "Slice cake bajet (pandan gula melaka, blueberry",
+    "name": "Slice Cake Bajet (pandan Gula Melaka, Blueberry",
     "startingPriceRm": 25,
     "description": "From RM25.",
     "image": "/products/dessert/dessert-slice-cake-bajet-pandan-gula-melaka-blueberry.webp",
@@ -1066,7 +1066,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-slice-cake-bajet-pandan-gula-melaka-blueberry-2",
     "categorySlug": "dessert",
-    "name": "Slice cake bajet (pandan gula melaka, blueberry,",
+    "name": "Slice Cake Bajet (pandan Gula Melaka, Blueberry,",
     "startingPriceRm": 25,
     "description": "From RM25.",
     "image": "/products/dessert/dessert-slice-cake-bajet-pandan-gula-melaka-blueberry-2.webp",
@@ -1075,7 +1075,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "dessert-slice-cake-bajet-pandan-gula-melaka-blueberry-vanilla-oreo",
     "categorySlug": "dessert",
-    "name": "Slice cake bajet (pandan gula melaka, blueberry, vanilla oreo",
+    "name": "Slice Cake Bajet (pandan Gula Melaka, Blueberry, Vanilla Oreo",
     "startingPriceRm": 25,
     "description": "From RM25.",
     "image": "/products/dessert/dessert-slice-cake-bajet-pandan-gula-melaka-blueberry-vanilla-oreo.webp",
@@ -1129,7 +1129,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "double-premium-cake-german-choc-size-8-rm130",
     "categorySlug": "double-premium-cake",
-    "name": "GERMAN CHOC SIZE 8 rm130\"",
+    "name": "German Choc Size 8 Rm130\"",
     "startingPriceRm": 130,
     "description": "Available sizes: 8\" RM130.",
     "image": "/products/double-premium-cake/double-premium-cake-german-choc-size-8-rm130.webp",
@@ -1148,21 +1148,6 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
     "startingPriceRm": 130,
     "description": "Available sizes: 8\" RM130.",
     "image": "/products/double-premium-cake/double-premium-cake-pandan-gula-melaka.webp",
-    "hideSizeSelector": false,
-    "priceBySizeRm": {
-      "8": 130
-    },
-    "availableSizesIn": [
-      8
-    ]
-  },
-  {
-    "id": "double-premium-cake-pandan-gula-melaka-2",
-    "categorySlug": "double-premium-cake",
-    "name": "Pandan Gula Melaka",
-    "startingPriceRm": 130,
-    "description": "Available sizes: 8\" RM130.",
-    "image": "/products/double-premium-cake/double-premium-cake-pandan-gula-melaka-2.webp",
     "hideSizeSelector": false,
     "priceBySizeRm": {
       "8": 130
@@ -1287,7 +1272,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "premium-economy-cake-devil-choc-cake",
     "categorySlug": "premium-economy-cake",
-    "name": "Devil Choc Cake -",
+    "name": "Devil Choc Cake",
     "startingPriceRm": 70,
     "description": "Available sizes: 7\" RM70, 9\" RM130.",
     "image": "/products/premium-economy-cake/premium-economy-cake-devil-choc-cake.webp",
@@ -1387,29 +1372,12 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
     ]
   },
   {
-    "id": "premium-economy-cake-walnut-heaven-butterscotch-2",
-    "categorySlug": "premium-economy-cake",
-    "name": "Walnut Heaven Butterscotch",
-    "startingPriceRm": 65,
-    "description": "Available sizes: 7\" RM65, 9\" RM120.",
-    "image": "/products/premium-economy-cake/premium-economy-cake-walnut-heaven-butterscotch-2.webp",
-    "hideSizeSelector": false,
-    "priceBySizeRm": {
-      "7": 65,
-      "9": 120
-    },
-    "availableSizesIn": [
-      7,
-      9
-    ]
-  },
-  {
-    "id": "snowy-cheese-snowy-cheese",
+    "id": "snowy-cheese-snowy-cheese-cake",
     "categorySlug": "snowy-cheese",
-    "name": "Snowy Cheese",
+    "name": "Snowy Cheese Cake",
     "startingPriceRm": 70,
     "description": "Available sizes: 8\" RM70.",
-    "image": "/products/snowy-cheese/snowy-cheese-snowy-cheese.webp",
+    "image": "/products/snowy-cheese/snowy-cheese-snowy-cheese-cake.webp",
     "hideSizeSelector": false,
     "priceBySizeRm": {
       "8": 70
@@ -1419,12 +1387,12 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
     ]
   },
   {
-    "id": "snowy-cheese-snowy-cheese-2",
+    "id": "snowy-cheese-snowy-cheese-cake-2",
     "categorySlug": "snowy-cheese",
-    "name": "Snowy Cheese 2",
+    "name": "Snowy Cheese Cake 2",
     "startingPriceRm": 70,
     "description": "Available sizes: 8\" RM70.",
-    "image": "/products/snowy-cheese/snowy-cheese-snowy-cheese-2.webp",
+    "image": "/products/snowy-cheese/snowy-cheese-snowy-cheese-cake-2.webp",
     "hideSizeSelector": false,
     "priceBySizeRm": {
       "8": 70
@@ -1434,12 +1402,12 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
     ]
   },
   {
-    "id": "snowy-cheese-snowy-cheese-3",
+    "id": "snowy-cheese-snowy-cheese-cake-3",
     "categorySlug": "snowy-cheese",
-    "name": "Snowy Cheese 3",
+    "name": "Snowy Cheese Cake 3",
     "startingPriceRm": 70,
     "description": "Available sizes: 8\" RM70.",
-    "image": "/products/snowy-cheese/snowy-cheese-snowy-cheese-3.webp",
+    "image": "/products/snowy-cheese/snowy-cheese-snowy-cheese-cake-3.webp",
     "hideSizeSelector": false,
     "priceBySizeRm": {
       "8": 70
@@ -1451,7 +1419,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake",
+    "name": "Wedding & Engagement Cake",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake.webp",
@@ -1460,7 +1428,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-2",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 2",
+    "name": "Wedding & Engagement Cake 2",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-2.webp",
@@ -1469,7 +1437,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-3",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 3",
+    "name": "Wedding & Engagement Cake 3",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-3.webp",
@@ -1478,7 +1446,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-4",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 4",
+    "name": "Wedding & Engagement Cake 4",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-4.webp",
@@ -1487,7 +1455,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-5",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 5",
+    "name": "Wedding & Engagement Cake 5",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-5.webp",
@@ -1496,7 +1464,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-6",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 6",
+    "name": "Wedding & Engagement Cake 6",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-6.webp",
@@ -1505,7 +1473,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-7",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 7",
+    "name": "Wedding & Engagement Cake 7",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-7.webp",
@@ -1514,7 +1482,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-8",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 8",
+    "name": "Wedding & Engagement Cake 8",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-8.webp",
@@ -1523,7 +1491,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-9",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 9",
+    "name": "Wedding & Engagement Cake 9",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-9.webp",
@@ -1532,7 +1500,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-10",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 10",
+    "name": "Wedding & Engagement Cake 10",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-10.webp",
@@ -1541,7 +1509,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-11",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 11",
+    "name": "Wedding & Engagement Cake 11",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-11.webp",
@@ -1550,7 +1518,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-12",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 12",
+    "name": "Wedding & Engagement Cake 12",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-12.webp",
@@ -1559,7 +1527,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-13",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 13",
+    "name": "Wedding & Engagement Cake 13",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-13.webp",
@@ -1568,7 +1536,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-14",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 14",
+    "name": "Wedding & Engagement Cake 14",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-14.webp",
@@ -1577,7 +1545,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-15",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 15",
+    "name": "Wedding & Engagement Cake 15",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-15.webp",
@@ -1586,7 +1554,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-16",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 16",
+    "name": "Wedding & Engagement Cake 16",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-16.webp",
@@ -1595,7 +1563,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-17",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 17",
+    "name": "Wedding & Engagement Cake 17",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-17.webp",
@@ -1604,7 +1572,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-18",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 18",
+    "name": "Wedding & Engagement Cake 18",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-18.webp",
@@ -1613,7 +1581,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-19",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 19",
+    "name": "Wedding & Engagement Cake 19",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-19.webp",
@@ -1622,7 +1590,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-20",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 20",
+    "name": "Wedding & Engagement Cake 20",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-20.webp",
@@ -1631,7 +1599,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-21",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 21",
+    "name": "Wedding & Engagement Cake 21",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-21.webp",
@@ -1640,7 +1608,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-22",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 22",
+    "name": "Wedding & Engagement Cake 22",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-22.webp",
@@ -1649,7 +1617,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-23",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 23",
+    "name": "Wedding & Engagement Cake 23",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-23.webp",
@@ -1658,7 +1626,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-24",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 24",
+    "name": "Wedding & Engagement Cake 24",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-24.webp",
@@ -1667,7 +1635,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-25",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 25",
+    "name": "Wedding & Engagement Cake 25",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-25.webp",
@@ -1676,7 +1644,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-26",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 26",
+    "name": "Wedding & Engagement Cake 26",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-26.webp",
@@ -1685,7 +1653,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-27",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 27",
+    "name": "Wedding & Engagement Cake 27",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-27.webp",
@@ -1694,7 +1662,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-28",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 28",
+    "name": "Wedding & Engagement Cake 28",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-28.webp",
@@ -1703,7 +1671,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-29",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 29",
+    "name": "Wedding & Engagement Cake 29",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-29.webp",
@@ -1712,7 +1680,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-30",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 30",
+    "name": "Wedding & Engagement Cake 30",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-30.webp",
@@ -1721,7 +1689,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-31",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 31",
+    "name": "Wedding & Engagement Cake 31",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-31.webp",
@@ -1730,7 +1698,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-32",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 32",
+    "name": "Wedding & Engagement Cake 32",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-32.webp",
@@ -1739,7 +1707,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-33",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 33",
+    "name": "Wedding & Engagement Cake 33",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-33.webp",
@@ -1748,7 +1716,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-34",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 34",
+    "name": "Wedding & Engagement Cake 34",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-34.webp",
@@ -1757,7 +1725,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-35",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 35",
+    "name": "Wedding & Engagement Cake 35",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-35.webp",
@@ -1766,7 +1734,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-36",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 36",
+    "name": "Wedding & Engagement Cake 36",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-36.webp",
@@ -1775,7 +1743,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-37",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 37",
+    "name": "Wedding & Engagement Cake 37",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-37.webp",
@@ -1784,7 +1752,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-38",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 38",
+    "name": "Wedding & Engagement Cake 38",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-38.webp",
@@ -1793,7 +1761,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-39",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 39",
+    "name": "Wedding & Engagement Cake 39",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-39.webp",
@@ -1802,7 +1770,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-40",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 40",
+    "name": "Wedding & Engagement Cake 40",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-40.webp",
@@ -1811,7 +1779,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-41",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 41",
+    "name": "Wedding & Engagement Cake 41",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-41.webp",
@@ -1820,7 +1788,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-42",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 42",
+    "name": "Wedding & Engagement Cake 42",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-42.webp",
@@ -1829,7 +1797,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-43",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 43",
+    "name": "Wedding & Engagement Cake 43",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-43.webp",
@@ -1838,7 +1806,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-44",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 44",
+    "name": "Wedding & Engagement Cake 44",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-44.webp",
@@ -1847,7 +1815,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-45",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 45",
+    "name": "Wedding & Engagement Cake 45",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-45.webp",
@@ -1856,7 +1824,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-46",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 46",
+    "name": "Wedding & Engagement Cake 46",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-46.webp",
@@ -1865,7 +1833,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-47",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 47",
+    "name": "Wedding & Engagement Cake 47",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-47.webp",
@@ -1874,7 +1842,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-48",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 48",
+    "name": "Wedding & Engagement Cake 48",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-48.webp",
@@ -1883,7 +1851,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-49",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 49",
+    "name": "Wedding & Engagement Cake 49",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-49.webp",
@@ -1892,7 +1860,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-50",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 50",
+    "name": "Wedding & Engagement Cake 50",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-50.webp",
@@ -1901,7 +1869,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-51",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 51",
+    "name": "Wedding & Engagement Cake 51",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-51.webp",
@@ -1910,7 +1878,7 @@ export const CAKE_PRODUCTS: CakeProduct[] = [
   {
     "id": "wedding-engagement-cake-wedding-engagement-cake-52",
     "categorySlug": "wedding-engagement-cake",
-    "name": "Wedding-Engagement Cake 52",
+    "name": "Wedding & Engagement Cake 52",
     "startingPriceRm": 120,
     "description": "From RM120. Contact us on WhatsApp for sizing and custom quotes.",
     "image": "/products/wedding-engagement-cake/wedding-engagement-cake-wedding-engagement-cake-52.webp",

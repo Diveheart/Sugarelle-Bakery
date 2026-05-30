@@ -15,12 +15,13 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { useEffect, useMemo, useState } from "react";
-import { CAKE_SIZES_IN } from "@/data/cake-catalog";
+import { CAKE_SIZES_IN, getCategoryBySlug } from "@/data/cake-catalog";
 import { productImageSrc } from "@/lib/product-image";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 export interface Cake {
   id: string;
+  categorySlug: string;
   name: string;
   description: string;
   /** Default / lowest price (RM) */
@@ -249,6 +250,9 @@ function ProductDetailBody({
   Title: typeof DialogTitle;
   Description: typeof DialogDescription;
 }) {
+  const category = getCategoryBySlug(cake.categorySlug);
+  const detailDescription = category?.description ?? cake.description;
+
   return (
     <>
       <div className="aspect-square sm:aspect-[4/3] w-full overflow-hidden bg-muted shrink-0">
@@ -261,7 +265,7 @@ function ProductDetailBody({
             {cake.name}
           </Title>
           <Description className="mt-2 text-sm sm:text-base text-muted-foreground leading-relaxed text-left">
-            {cake.description}
+            {detailDescription}
           </Description>
         </div>
 
@@ -433,12 +437,9 @@ const CakeCard = ({ cake }: CakeCardProps) => {
           </div>
 
           <div className="p-3 sm:p-5 md:p-6 pb-2 sm:pb-4">
-            <h3 className="font-display text-sm sm:text-xl md:text-2xl font-semibold mb-1 sm:mb-2 text-foreground line-clamp-2 sm:line-clamp-none">
+            <h3 className="font-display text-sm sm:text-xl md:text-2xl font-semibold mb-0 sm:mb-0 text-foreground line-clamp-2 sm:line-clamp-none">
               {cake.name}
             </h3>
-            <p className="hidden sm:block text-muted-foreground text-sm mb-0 line-clamp-2">
-              {cake.description}
-            </p>
           </div>
         </div>
 

@@ -42,7 +42,6 @@ const CategoryPage = () => {
             Back to Home
           </Link>
           <h1 className="font-display text-4xl md:text-5xl font-semibold mb-4">{cat.name}</h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">{cat.description}</p>
         </div>
       </section>
 
@@ -55,6 +54,7 @@ const CategoryPage = () => {
                 key={product.id}
                 cake={{
                   id: product.id,
+                  categorySlug: product.categorySlug,
                   name: product.name,
                   description: product.description,
                   price: product.startingPriceRm,
