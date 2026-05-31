@@ -55,7 +55,7 @@ const InstagramSection = () => {
           {instagramPosts.map((post, index) => (
             <a
               key={post.id}
-              href="https://instagram.com/sugarellebakery"
+              href="https://www.instagram.com/_sugarellebakery/"
               target="_blank"
               rel="noopener noreferrer"
               className={`group relative aspect-square overflow-hidden rounded-lg bg-muted transition-all duration-700 ${
@@ -81,7 +81,7 @@ const InstagramSection = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <a href="https://instagram.com/sugarellebakery" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/_sugarellebakery/" target="_blank" rel="noopener noreferrer">
             <Button className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-8 py-6 text-base font-medium inline-flex items-center gap-2">
               <Instagram className="w-5 h-5" />
               Follow on Instagram
