@@ -36,12 +36,10 @@ const HighlightsSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-20">
             <div className="order-2 md:order-1 text-center md:text-left">
               <h3 className="font-display text-2xl md:text-3xl font-semibold mb-4">
-                The Perfect Cake?
+                Every Slice, Made With Love
               </h3>
               <p className="text-muted-foreground max-w-xl mx-auto md:mx-0">
-                We're a team of professional chefs, with the goal of
-                creating a perfectly balanced cake. Join us on our journey of
-                discovery and self-improvement.
+                Freshly handcrafted using premium ingredients, because every celebration deserves something truly special.
               </p>
             </div>
 

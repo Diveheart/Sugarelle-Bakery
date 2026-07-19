@@ -522,6 +522,45 @@ function pickBestFile(files, categorySlug) {
   );
 }
 
+const NAME_LIST_CATEGORIES = new Set(["custom-cake", "wedding-engagement-cake"]);
+
+function loadNameList(categorySlug) {
+  const file = path.join(ROOT, "scripts", "product-names", `${categorySlug}.txt`);
+  if (!fs.existsSync(file)) {
+    console.warn(`Name list not found: ${file}`);
+    return [];
+  }
+
+  return fs
+    .readFileSync(file, "utf8")
+    .split(/\r?\n/)
+    .map((line) => line.replace(/^\d+\.?\s*/, "").trim())
+    .filter(Boolean)
+    .map((name) => formatProductName(name));
+}
+
+/** Slot index from placeholder ids like custom-cake-custom-cakes-10 → 10 */
+function getSlotIndex(id) {
+  const match = id.match(/-(\d+)$/);
+  return match ? Number(match[1]) : 1;
+}
+
+function applyNameList(products, categorySlug) {
+  const names = loadNameList(categorySlug);
+  if (names.length === 0) return products;
+
+  const sorted = [...products].sort((a, b) => getSlotIndex(a.id) - getSlotIndex(b.id));
+  if (sorted.length !== names.length) {
+    console.warn(
+      `${categorySlug}: ${sorted.length} products vs ${names.length} names in product-names list`,
+    );
+  }
+  sorted.forEach((p, i) => {
+    if (names[i]) p.name = names[i];
+  });
+  return sorted;
+}
+
 function main() {
   const allProducts = [];
 
@@ -545,10 +584,16 @@ function main() {
 
     const categoryNameCounter = { value: 0 };
     const picked = pickBestPerProduct(files, slug);
-    picked.forEach(({ file }, i) => {
-      allProducts.push(buildProduct(slug, file, i, categoryNameCounter));
-    });
-    console.log(`${slug}: ${picked.length} products (from ${files.length} files)`);
+    let categoryProducts = picked.map(({ file }, i) =>
+      buildProduct(slug, file, i, categoryNameCounter),
+    );
+
+    if (NAME_LIST_CATEGORIES.has(slug)) {
+      categoryProducts = applyNameList(categoryProducts, slug);
+    }
+
+    allProducts.push(...categoryProducts);
+    console.log(`${slug}: ${categoryProducts.length} products (from ${files.length} files)`);
   }
 
   const products = dedupeIds(allProducts).map((p) => ({

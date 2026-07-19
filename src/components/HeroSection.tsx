@@ -59,7 +59,7 @@ const HeroSection = () => {
               Made With Care
             </p>
             <p className="font-display text-xl sm:text-2xl md:text-3xl font-medium text-white/90 tracking-wide">
-              by Sugarelle Bakery
+              by Sugarelle Bakery <br></br>202603037349 (003821860-X)
             </p>
           </div>
 
